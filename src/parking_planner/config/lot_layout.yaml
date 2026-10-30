@@ -1,0 +1,496 @@
+meta:
+  frame: world
+  source_world: city_parking_lot.sdf
+  vehicle: {length: 4.35, width: 1.85, wheelbase: 2.7, max_steer: 0.61, effective_max_steer: 0.44}
+resolution: 0.1
+roi: [-100.0, 100.0, -45.0, 42.0]
+obstacles:
+- {cx: -88.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_0}
+- {cx: -77.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_1}
+- {cx: -66.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_2}
+- {cx: -55.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_3}
+- {cx: -44.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_4}
+- {cx: -33.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_5}
+- {cx: -22.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_6}
+- {cx: -11.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_7}
+- {cx: 0.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_8}
+- {cx: 11.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_9}
+- {cx: 22.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_10}
+- {cx: 33.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_11}
+- {cx: 44.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_12}
+- {cx: 55.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_13}
+- {cx: 66.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_14}
+- {cx: 77.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_15}
+- {cx: 88.0, cy: 31.4, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_16}
+- {cx: -22.6, cy: -22.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_17}
+- {cx: -22.6, cy: -14.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_18}
+- {cx: -22.6, cy: -6.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_19}
+- {cx: -22.6, cy: 2.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_20}
+- {cx: 22.6, cy: -22.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_21}
+- {cx: 22.6, cy: -14.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_22}
+- {cx: 22.6, cy: -6.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_23}
+- {cx: 22.6, cy: 2.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_24}
+- {cx: -33.6, cy: -24.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_25}
+- {cx: -33.6, cy: -10.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_26}
+- {cx: -33.6, cy: 4.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_27}
+- {cx: 33.6, cy: -24.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_28}
+- {cx: 33.6, cy: -10.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_29}
+- {cx: 33.6, cy: 4.0, yaw: 0.0, hl: 0.35, hw: 0.35, name: tree_30}
+- {cx: -17.0, cy: -22.25, yaw: 0.0, hl: 2.175, hw: 0.925, name: parked_w0}
+- {cx: -17.0, cy: -17.25, yaw: 0.0, hl: 2.175, hw: 0.925, name: parked_w2}
+- {cx: -17.0, cy: -14.75, yaw: 0.0, hl: 2.175, hw: 0.925, name: parked_w3}
+- {cx: -17.0, cy: -7.25, yaw: 0.0, hl: 2.175, hw: 0.925, name: parked_w6}
+- {cx: -17.0, cy: -2.25, yaw: 0.0, hl: 2.175, hw: 0.925, name: parked_w8}
+- {cx: 17.0, cy: -19.75, yaw: 3.14159, hl: 2.175, hw: 0.925, name: parked_e1}
+- {cx: 17.0, cy: -12.25, yaw: 3.14159, hl: 2.175, hw: 0.925, name: parked_e4}
+- {cx: 17.0, cy: -9.75, yaw: 3.14159, hl: 2.175, hw: 0.925, name: parked_e5}
+- {cx: 17.0, cy: 0.25, yaw: 3.14159, hl: 2.175, hw: 0.925, name: parked_e9}
+- {cx: -12.0, cy: -23.1, yaw: 0.0, hl: 2.175, hw: 0.925, name: parked_p0}
+- {cx: 0.0, cy: -23.1, yaw: 0.0, hl: 2.175, hw: 0.925, name: parked_p1}
+- {cx: -14.7, cy: -32.0, yaw: 0.0, hl: 2.175, hw: 0.925, name: parked_b0}
+- {cx: -1.5, cy: -32.0, yaw: 0.0, hl: 2.175, hw: 0.925, name: parked_b1}
+- {cx: 11.7, cy: -32.0, yaw: 0.0, hl: 2.175, hw: 0.925, name: parked_b2}
+- {cx: -31.65, cy: -21.0, yaw: -1.5708, hl: 2.175, hw: 0.925, name: parked_side_W0}
+- {cx: -31.65, cy: -3.0, yaw: -1.5708, hl: 2.175, hw: 0.925, name: parked_side_W3}
+- {cx: 31.65, cy: -21.0, yaw: -1.5708, hl: 2.175, hw: 0.925, name: parked_side_E0}
+- {cx: 31.65, cy: -3.0, yaw: -1.5708, hl: 2.175, hw: 0.925, name: parked_side_E3}
+- {cx: -64.5, cy: 28.1, yaw: 0.0, hl: 30.5, hw: 2.1, name: sidewalk_north_0}
+- {cx: -64.5, cy: 31.4, yaw: 0.0, hl: 30.5, hw: 1.4, name: grass_north_0}
+- {cx: 0.0, cy: 28.1, yaw: 0.0, hl: 24.0, hw: 2.1, name: sidewalk_north_1}
+- {cx: 0.0, cy: 31.4, yaw: 0.0, hl: 24.0, hw: 1.4, name: grass_north_1}
+- {cx: 64.5, cy: 28.1, yaw: 0.0, hl: 30.5, hw: 2.1, name: sidewalk_north_2}
+- {cx: 64.5, cy: 31.4, yaw: 0.0, hl: 30.5, hw: 1.4, name: grass_north_2}
+- {cx: -47.0, cy: -29.2, yaw: 0.0, hl: 13.0, hw: 0.8, name: sidewalk_south_road_0}
+- {cx: 0.0, cy: -29.2, yaw: 0.0, hl: 24.0, hw: 0.8, name: sidewalk_south_road_1}
+- {cx: 47.0, cy: -29.2, yaw: 0.0, hl: 13.0, hw: 0.8, name: sidewalk_south_road_2}
+- {cx: -64.5, cy: 12.6, yaw: 0.0, hl: 30.5, hw: 1.4, name: sidewalk_south_0}
+- {cx: -14.75, cy: 12.6, yaw: 0.0, hl: 9.25, hw: 1.4, name: sidewalk_south_1}
+- {cx: 14.75, cy: 12.6, yaw: 0.0, hl: 9.25, hw: 1.4, name: sidewalk_south_2}
+- {cx: 64.5, cy: 12.6, yaw: 0.0, hl: 30.5, hw: 1.4, name: sidewalk_south_3}
+- {cx: -21.6, cy: -9.0, yaw: 0.0, hl: 1.6, hw: 15.0, name: lot_ring_w}
+- {cx: 21.6, cy: -9.0, yaw: 0.0, hl: 1.6, hw: 15.0, name: lot_ring_e}
+- {cx: 0.0, cy: -27.0, yaw: 0.0, hl: 23.0, hw: 1.0, name: lot_ring_s}
+- {cx: -14.5, cy: 7.6, yaw: 0.0, hl: 8.5, hw: 1.6, name: lot_ring_n_w}
+- {cx: 14.5, cy: 7.6, yaw: 0.0, hl: 8.5, hw: 1.6, name: lot_ring_n_e}
+- {cx: -22.8, cy: -9.0, yaw: 0.0, hl: 0.7, hw: 14.0, name: grass_lot_w}
+- {cx: 22.8, cy: -9.0, yaw: 0.0, hl: 0.7, hw: 14.0, name: grass_lot_e}
+- {cx: 0.0, cy: -9.25, yaw: 0.0, hl: 1.6, hw: 5.25, name: island_curb}
+- {cx: 0.0, cy: -9.25, yaw: 0.0, hl: 1.4, hw: 5.05, name: island_grass}
+- {cx: -1.0, cy: -5.5, yaw: 0.0, hl: 0.26, hw: 0.26, name: pillar_i0}
+- {cx: 1.0, cy: -5.5, yaw: 0.0, hl: 0.26, hw: 0.26, name: pillar_i1}
+- {cx: -1.0, cy: -13.0, yaw: 0.0, hl: 0.26, hw: 0.26, name: pillar_i2}
+- {cx: 1.0, cy: -13.0, yaw: 0.0, hl: 0.26, hw: 0.26, name: pillar_i3}
+- {cx: -7.0, cy: 5.5, yaw: 0.0, hl: 0.26, hw: 0.26, name: pillar_e0}
+- {cx: 7.0, cy: 5.5, yaw: 0.0, hl: 0.26, hw: 0.26, name: pillar_e1}
+- {cx: -55.0, cy: 44.5, yaw: 0.0, hl: 12.0, hw: 9.0, name: bldg_nw}
+- {cx: -6.0, cy: 46.0, yaw: 0.0, hl: 13.0, hw: 9.0, name: bldg_n}
+- {cx: 44.0, cy: 44.5, yaw: 0.0, hl: 12.0, hw: 9.0, name: bldg_ne}
+- {cx: -56.0, cy: -6.0, yaw: 0.0, hl: 13.0, hw: 12.0, name: bldg_w}
+- {cx: 56.0, cy: -6.0, yaw: 0.0, hl: 13.0, hw: 12.0, name: bldg_e}
+- {cx: 0.0, cy: -56.0, yaw: 0.0, hl: 16.0, hw: 10.0, name: bldg_s}
+stalls:
+- id: W0
+  kind: perpendicular
+  cx: -17.0
+  cy: -22.25
+  yaw: 0.0
+  l: 5.8
+  w: 2.5
+  lane_normal: [1.0, 0.0]
+  region: lot
+- id: W1
+  kind: perpendicular
+  cx: -17.0
+  cy: -19.75
+  yaw: 0.0
+  l: 5.8
+  w: 2.5
+  lane_normal: [1.0, 0.0]
+  region: lot
+- id: W2
+  kind: perpendicular
+  cx: -17.0
+  cy: -17.25
+  yaw: 0.0
+  l: 5.8
+  w: 2.5
+  lane_normal: [1.0, 0.0]
+  region: lot
+- id: W3
+  kind: perpendicular
+  cx: -17.0
+  cy: -14.75
+  yaw: 0.0
+  l: 5.8
+  w: 2.5
+  lane_normal: [1.0, 0.0]
+  region: lot
+- id: W4
+  kind: perpendicular
+  cx: -17.0
+  cy: -12.25
+  yaw: 0.0
+  l: 5.8
+  w: 2.5
+  lane_normal: [1.0, 0.0]
+  region: lot
+- id: W5
+  kind: perpendicular
+  cx: -17.0
+  cy: -9.75
+  yaw: 0.0
+  l: 5.8
+  w: 2.5
+  lane_normal: [1.0, 0.0]
+  region: lot
+- id: W6
+  kind: perpendicular
+  cx: -17.0
+  cy: -7.25
+  yaw: 0.0
+  l: 5.8
+  w: 2.5
+  lane_normal: [1.0, 0.0]
+  region: lot
+- id: W7
+  kind: perpendicular
+  cx: -17.0
+  cy: -4.75
+  yaw: 0.0
+  l: 5.8
+  w: 2.5
+  lane_normal: [1.0, 0.0]
+  region: lot
+- id: W8
+  kind: perpendicular
+  cx: -17.0
+  cy: -2.25
+  yaw: 0.0
+  l: 5.8
+  w: 2.5
+  lane_normal: [1.0, 0.0]
+  region: lot
+- id: W9
+  kind: perpendicular
+  cx: -17.0
+  cy: 0.25
+  yaw: 0.0
+  l: 5.8
+  w: 2.5
+  lane_normal: [1.0, 0.0]
+  region: lot
+- id: E0
+  kind: perpendicular
+  cx: 17.0
+  cy: -22.25
+  yaw: 3.14159
+  l: 5.8
+  w: 2.5
+  lane_normal: [-1.0, 0.0]
+  region: lot
+- id: E1
+  kind: perpendicular
+  cx: 17.0
+  cy: -19.75
+  yaw: 3.14159
+  l: 5.8
+  w: 2.5
+  lane_normal: [-1.0, 0.0]
+  region: lot
+- id: E2
+  kind: perpendicular
+  cx: 17.0
+  cy: -17.25
+  yaw: 3.14159
+  l: 5.8
+  w: 2.5
+  lane_normal: [-1.0, 0.0]
+  region: lot
+- id: E3
+  kind: perpendicular
+  cx: 17.0
+  cy: -14.75
+  yaw: 3.14159
+  l: 5.8
+  w: 2.5
+  lane_normal: [-1.0, 0.0]
+  region: lot
+- id: E4
+  kind: perpendicular
+  cx: 17.0
+  cy: -12.25
+  yaw: 3.14159
+  l: 5.8
+  w: 2.5
+  lane_normal: [-1.0, 0.0]
+  region: lot
+- id: E5
+  kind: perpendicular
+  cx: 17.0
+  cy: -9.75
+  yaw: 3.14159
+  l: 5.8
+  w: 2.5
+  lane_normal: [-1.0, 0.0]
+  region: lot
+- id: E6
+  kind: perpendicular
+  cx: 17.0
+  cy: -7.25
+  yaw: 3.14159
+  l: 5.8
+  w: 2.5
+  lane_normal: [-1.0, 0.0]
+  region: lot
+- id: E7
+  kind: perpendicular
+  cx: 17.0
+  cy: -4.75
+  yaw: 3.14159
+  l: 5.8
+  w: 2.5
+  lane_normal: [-1.0, 0.0]
+  region: lot
+- id: E8
+  kind: perpendicular
+  cx: 17.0
+  cy: -2.25
+  yaw: 3.14159
+  l: 5.8
+  w: 2.5
+  lane_normal: [-1.0, 0.0]
+  region: lot
+- id: E9
+  kind: perpendicular
+  cx: 17.0
+  cy: 0.25
+  yaw: 3.14159
+  l: 5.8
+  w: 2.5
+  lane_normal: [-1.0, 0.0]
+  region: lot
+- id: P0
+  kind: parallel
+  cx: -12.0
+  cy: -23.1
+  yaw: 0.0
+  l: 6.0
+  w: 3.0
+  lane_normal: [0.0, 1.0]
+  region: lot
+- id: P1
+  kind: parallel
+  cx: -6.0
+  cy: -23.1
+  yaw: 0.0
+  l: 6.0
+  w: 3.0
+  lane_normal: [0.0, 1.0]
+  region: lot
+- id: P2
+  kind: parallel
+  cx: 0.0
+  cy: -23.1
+  yaw: 0.0
+  l: 6.0
+  w: 3.0
+  lane_normal: [0.0, 1.0]
+  region: lot
+- id: P3
+  kind: parallel
+  cx: 6.0
+  cy: -23.1
+  yaw: 0.0
+  l: 6.0
+  w: 3.0
+  lane_normal: [0.0, 1.0]
+  region: lot
+- id: B0
+  kind: parallel
+  cx: -14.7
+  cy: -32.0
+  yaw: 0.0
+  l: 6.6
+  w: 2.4
+  lane_normal: [0.0, -1.0]
+  region: road_south
+- id: B1
+  kind: parallel
+  # [B3 修复] B1 的 cx **保持 −8.1**，改从**世界侧**解决余量。
+  # 原先 B1 的车位框东边缘离 `parked_b1`（x=−3.6）只有 **0.15 m**：
+  # 目标位姿处车体到邻车就只剩 0.15 m，比 0.20 m 的验收线还小，等于这个位
+  # 怎么停都过不了 —— 真机三轮的最小间隙稳定在 0.21~0.26 m 擦线，最后一轮
+  # 倒车还被后方护栏按 0.30 m 挡在 0.23 m 处，5 次微调全白做、终点差 6.71 m。
+  # 试过把 cx 居中到 −10.8（两侧真中点），但运行时栅格把那个目标点判成
+  # 「goal 位姿被占据」并陷入重选循环（离线 check_goal_gap.py 用的是 world SDF
+  # 里的车位框，跟运行时的判定口径不一致，看不出这个问题）。
+  # 最终做法：**把 `parked_b1` 从 x=−3.6 东移到 −1.8**（见
+  # `parking_lot_city/worlds/city_parking_lot.sdf`）。这样
+  #   · B1 目标处到东邻车的间隙 0.15 → **1.95 m**；
+  #   · B3（cx=3.6）西侧邻车间隙 1.725 → **1.05 m**，仍然够。
+  # 两个位依然各自夹在两台停放车之间，侧方位形态不变。
+  # [B3 修复 · 加宽车位深度] cy −32.0 → −32.6、w 2.4 → 3.2（B1/B3/B5 同步）。
+  # 原因：`goal_pose` 就是车位中心，旧中心离北侧人行道路缘（y=−30.8）
+  # 只有 0.275 m —— 自车宽 1.85 m、车位深 2.4 m，单侧净空 0.275 m。
+  # 真机 B1 终点已经到 0.16 m / 7.7°（判据 0.35 m / 9° 全达标），
+  # 但 7.7° 的航向残差让车角横向多扫出 (4.35/2)·sin7.7° ≈ 0.29 m，
+  # 正好把这点净空吃光 → 整段最小车体间隙 **0.00 m**，被判 INCOMPLETE。
+  # 中心南移 0.6 m 后车身占 [−33.525, −31.675]，离路缘 0.875 m，
+  # 航向残差有地方去。两侧邻车（parked_b0/b1）仍在原位，侧方位形态不变。
+  cx: -8.1
+  cy: -32.6
+  yaw: 0.0
+  l: 6.6
+  w: 3.2
+  lane_normal: [0.0, -1.0]
+  region: road_south
+- id: B2
+  kind: parallel
+  cx: -1.5
+  cy: -32.0
+  yaw: 0.0
+  l: 6.6
+  w: 2.4
+  lane_normal: [0.0, -1.0]
+  region: road_south
+- id: B3
+  kind: parallel
+  # [B3 修复] cx 5.1 → 3.6：同 B1。邻车 parked_b1（车身东沿 −1.425）与
+  # parked_b2（车身西沿 8.625）之间的净空是 [−1.425, 8.625]，中点 3.6。
+  # 旧值 5.1 让**东侧只剩 0.225 m** —— 真机 B3 三轮都是车尾右后角擦着
+  # parked_b2 停死（护栏读数 lon=−2.17 / lat=−0.49，车体间隙 0.00 m），
+  # 而规划器按 2.4 m 车位宽算出的余量是 +0.93 m，两边对不上就是因为
+  # 实际可用长度只有 6.825 m（不是 6.6 m 的对称车位）。居中后前后各 1.725 m。
+  cx: 3.6
+  cy: -32.6
+  yaw: 0.0
+  l: 6.6
+  w: 3.2
+  lane_normal: [0.0, -1.0]
+  region: road_south
+- id: B4
+  kind: parallel
+  cx: 11.7
+  cy: -32.0
+  yaw: 0.0
+  l: 6.6
+  w: 2.4
+  lane_normal: [0.0, -1.0]
+  region: road_south
+- id: B5
+  kind: parallel
+  cx: 18.3
+  cy: -32.6
+  yaw: 0.0
+  l: 6.6
+  w: 3.2
+  lane_normal: [0.0, -1.0]
+  region: road_south
+- id: SW0
+  kind: parallel
+  cx: -31.65
+  cy: -21.0
+  yaw: -1.5708
+  l: 6.0
+  w: 2.4
+  lane_normal: [1.0, 0.0]
+  region: road_west
+- id: SW1
+  kind: parallel
+  cx: -31.65
+  cy: -15.0
+  yaw: -1.5708
+  l: 6.0
+  w: 2.4
+  lane_normal: [1.0, 0.0]
+  region: road_west
+- id: SW2
+  kind: parallel
+  cx: -31.65
+  cy: -9.0
+  yaw: -1.5708
+  l: 6.0
+  w: 2.4
+  lane_normal: [1.0, 0.0]
+  region: road_west
+- id: SW3
+  kind: parallel
+  cx: -31.65
+  cy: -3.0
+  yaw: -1.5708
+  l: 6.0
+  w: 2.4
+  lane_normal: [1.0, 0.0]
+  region: road_west
+- id: SW4
+  kind: parallel
+  cx: -31.65
+  cy: 3.0
+  yaw: -1.5708
+  l: 6.0
+  w: 2.4
+  lane_normal: [1.0, 0.0]
+  region: road_west
+- id: SW5
+  kind: parallel
+  cx: -31.65
+  cy: 9.0
+  yaw: -1.5708
+  l: 6.0
+  w: 2.4
+  lane_normal: [1.0, 0.0]
+  region: road_west
+- id: SE0
+  kind: parallel
+  cx: 31.65
+  cy: -21.0
+  yaw: -1.5708
+  l: 6.0
+  w: 2.4
+  lane_normal: [-1.0, 0.0]
+  region: road_east
+- id: SE1
+  kind: parallel
+  cx: 31.65
+  cy: -15.0
+  yaw: -1.5708
+  l: 6.0
+  w: 2.4
+  lane_normal: [-1.0, 0.0]
+  region: road_east
+- id: SE2
+  kind: parallel
+  cx: 31.65
+  cy: -9.0
+  yaw: -1.5708
+  l: 6.0
+  w: 2.4
+  lane_normal: [-1.0, 0.0]
+  region: road_east
+- id: SE3
+  kind: parallel
+  cx: 31.65
+  cy: -3.0
+  yaw: -1.5708
+  l: 6.0
+  w: 2.4
+  lane_normal: [-1.0, 0.0]
+  region: road_east
+- id: SE4
+  kind: parallel
+  cx: 31.65
+  cy: 3.0
+  yaw: -1.5708
+  l: 6.0
+  w: 2.4
+  lane_normal: [-1.0, 0.0]
+  region: road_east
+- id: SE5
+  kind: parallel
+  cx: 31.65
+  cy: 9.0
+  yaw: -1.5708
+  l: 6.0
+  w: 2.4
+  lane_normal: [-1.0, 0.0]
+  region: road_east

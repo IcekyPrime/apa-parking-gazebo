@@ -1,0 +1,2 @@
+time,stall,err_xy,err_yaw_deg,path_len,reverse,switch,plan_time,total_time,risk_at_end
+2026-10-23 12:22:26,W5,0.283,9.88,12.50,0.00,0,1.36,20.6,safe
