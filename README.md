@@ -191,6 +191,10 @@ export FASTRTPS_DEFAULT_PROFILES_FILE=\
   `parking_lot_city` 的 `share` 目录解析模型；桥接配置同理由共享目录读取。
 - 车位几何、车道图、各车位的预备位姿分别来自 `lot_layout.yaml`、`route_graph.yaml`、
   `staging_poses.yaml`，改场景时必须同步改这三份配置（`scripts/check_layout.sh` 会做一致性校验）。
+- 注意：B 排（南侧道路）6 个车位的中心是**手工标定**的，按两侧停放车的真实中点和端部余量取值，
+  与 `build_world.py` 里按等距网格画的标线并不重合。因此 `check_layout.sh` 会对 B 排报
+  「几何不一致」，这是已知项，不影响运行；不要用 `python3 -m parking_planner.make_layout`
+  重新生成布局，那会用标线网格覆盖这组手工值，B 排会重新出现擦邻车。
 
 ### 输出位置
 
@@ -367,6 +371,12 @@ apa-parking-gazebo/
    权重时预测节点不输出结果，风险恒为 `safe`。
 5. **WSL2 下的 DDS 稳定性。** 必须使用 UDP-only 的 Fast-DDS 配置并定期清理残留进程，脚本已内置。
    内存建议 ≥ 8 GB，规划窗口开太大会挤压 Gazebo 的余量。
+6. **B 排车位的几何是手工标定的。** 六个平行位的中心按两侧停放车的真实中点取值，与世界里按等距
+   网格画的标线不重合，`check_layout.sh` 会稳定报这一项不一致。这是为了让平行位有可执行的端部
+   余量而做的取舍，代价是布局自检不能做到全绿。
+7. **W0 车位的预备位姿落在障碍里。** 布局自检的第 [3] 项会点出 W0，该位一旦被选中，入位规划
+   必然失败。当前 W0 本身停着车、不会被选作目标，所以没有暴露；如果将来要启用这个位，
+   需要先调整该排的预备位姿纵向偏移 `staging_along`，或把车位中心挪开。
 
 ---
 
@@ -378,7 +388,10 @@ apa-parking-gazebo/
 bash scripts/clean_env.sh                 # 清残留
 bash scripts/build.sh                     # 8 个包全部编译通过
 source ~/apa_ws/install/setup.bash
-bash scripts/check_layout.sh              # 生成物一致性 + 几何/连通性
-python3 scripts/verify_park_sim.py B3     # 离线闭环：终点误差 ≤0.35 m、间隙 >0
+bash scripts/check_layout.sh              # 布局自检：B 排会报已知的标线不一致，其余项应为 PASS
+python3 scripts/verify_park_sim.py B3     # 离线闭环：终点 ≤0.35 m、间隙 >0、剐蹭 0 个
 bash scripts/run_demo.sh                  # 全链路：日志出现「泊车完成」且状态 DONE
 ```
+
+判读要点：`check_layout.sh` 的第 [2] 项会稳定列出 B0–B5 六个车位的几何不一致（原因见上文
+「资源加载规则」的最后一条），其余检查项与 `verify_park_sim.py` 的结果应全部通过。
